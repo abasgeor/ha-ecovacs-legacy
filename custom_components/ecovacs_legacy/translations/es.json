@@ -1,0 +1,72 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Cuenta de Ecovacs",
+        "description": "La misma cuenta de la app Ecovacs Home. Sólo se ofrecen los robots DEEBOT 710/711 legacy que la integración oficial de Ecovacs no soporta.",
+        "data": {
+          "username": "Usuario (correo)",
+          "password": "Contraseña",
+          "country": "País"
+        }
+      },
+      "device_verification": {
+        "title": "Verificación del dispositivo",
+        "description": "Ecovacs envió un código de verificación al correo de {username}. Escríbelo para autorizar a este Home Assistant como dispositivo cliente.",
+        "data": {
+          "verification_code": "Código de verificación"
+        }
+      },
+      "devices": {
+        "title": "Robots",
+        "description": "Elige los robots legacy que este Home Assistant debe exponer.",
+        "data": {
+          "devices": "Robots"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Volver a autenticar",
+        "description": "Escribe la contraseña de Ecovacs de {username}.",
+        "data": {
+          "password": "Contraseña"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Usuario o contraseña inválidos",
+      "cannot_connect": "No se pudo conectar a la nube de Ecovacs",
+      "invalid_verification_code": "Código de verificación inválido o vencido",
+      "unknown": "Error inesperado"
+    },
+    "abort": {
+      "already_configured": "Esta cuenta ya está configurada",
+      "no_devices": "La cuenta no tiene robots DEEBOT 710/711 legacy (los demás los maneja la integración oficial de Ecovacs)",
+      "reauth_successful": "Autenticación renovada"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "lifespan_brush": {
+        "name": "Vida del cepillo principal"
+      },
+      "lifespan_side_brush": {
+        "name": "Vida del cepillo lateral"
+      },
+      "lifespan_filter": {
+        "name": "Vida del filtro"
+      },
+      "error": {
+        "name": "Error"
+      },
+      "total_stats_area": {
+        "name": "Área total limpiada"
+      },
+      "total_stats_time": {
+        "name": "Tiempo total de limpieza"
+      },
+      "total_stats_cleanings": {
+        "name": "Limpiezas totales"
+      }
+    }
+  }
+}

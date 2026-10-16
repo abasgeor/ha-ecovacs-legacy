@@ -1,0 +1,14 @@
+{
+  "domain": "ecovacs_legacy",
+  "name": "Ecovacs Legacy (DEEBOT 710/711)",
+  "codeowners": ["@abasgeor"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/abasgeor/ha-ecovacs-legacy",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/abasgeor/ha-ecovacs-legacy/issues",
+  "loggers": ["deebot_client"],
+  "requirements": ["deebot-client"],
+  "version": "0.1.0"
+}

@@ -1,0 +1,72 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ecovacs account",
+        "description": "Same account as the Ecovacs Home app. Only the legacy DEEBOT 710/711 robots that the core Ecovacs integration does not support will be offered.",
+        "data": {
+          "username": "Username (e-mail)",
+          "password": "Password",
+          "country": "Country"
+        }
+      },
+      "device_verification": {
+        "title": "Device verification",
+        "description": "Ecovacs sent a verification code to the e-mail of {username}. Enter it to authorize this Home Assistant as a client device.",
+        "data": {
+          "verification_code": "Verification code"
+        }
+      },
+      "devices": {
+        "title": "Robots",
+        "description": "Choose the legacy robots this Home Assistant should expose.",
+        "data": {
+          "devices": "Robots"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate",
+        "description": "Enter the Ecovacs password for {username}.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid username or password",
+      "cannot_connect": "Cannot connect to the Ecovacs cloud",
+      "invalid_verification_code": "Invalid or expired verification code",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This account is already configured",
+      "no_devices": "The account has no legacy DEEBOT 710/711 robots (the others are handled by the core Ecovacs integration)",
+      "reauth_successful": "Re-authentication successful"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "lifespan_brush": {
+        "name": "Main brush lifespan"
+      },
+      "lifespan_side_brush": {
+        "name": "Side brush lifespan"
+      },
+      "lifespan_filter": {
+        "name": "Filter lifespan"
+      },
+      "error": {
+        "name": "Error"
+      },
+      "total_stats_area": {
+        "name": "Total area cleaned"
+      },
+      "total_stats_time": {
+        "name": "Total cleaning time"
+      },
+      "total_stats_cleanings": {
+        "name": "Total cleanings"
+      }
+    }
+  }
+}
